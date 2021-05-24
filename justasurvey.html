@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 
+
+Shannon Broden
+Portfolio Survey Page
+May 1, 2021
+
+
+-->
+
+<div id="main">
+    <h1 id="title">Just a Quick Survey About Taking Surveys</h1>
+    <h3>Please note none of your information is saved and stored.</h3>
+    <p id="description">Please select your preferred answer for each question.</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your Name Here" required><br>
+        <label for="email" id="email-label">E-mail:</label><br>
+        <input type="email" id="email" name="email" placeholder="you@email.com" required pattern="*@*"><br>
+        <label for="favenumber" id="number-label">Your favorite number from 1 to 100:</label><br>
+        <input type="number" id="number" name="favenumber" placeholder="Favorite Number" required min ="1" max="100"><br>
+        <label for="dropdown" id="dropdown-label">Do you believe in luck?</label><br>
+        <select name="dropdown" id="dropdown">
+            <option value="value1">Yes</option>
+            <option value="value2">No</option>
+            <option value="value3">I don't know</option>
+        </select><br>
+        <p>Do you like answering surveys?</p>
+        <label for="answer1"><input id="yes" type="radio" value="yes" name="yes-no"> Yes</label>
+        <label for="answer2"><input id="no" type="radio" value="no" name="yes-no"> No</label><br>
+        <p>Check all of your favorite times of day that apply.</p>
+        <label for="response1"><input id="morning" type="checkbox" value="morning" name="daypart"> Morning</label>
+        <label for="response2"><input id="afternoon" type="checkbox" value="afternoon" name="daypart"> Afternoon</label>
+        <label for="response3"><input id="evening" type="checkbox" value="evening" name="daypart"> Evening</label>
+        <label for="response4"><input id="night" type="checkbox" value="night" name="daypart"> Night</label><br>        
+        <label for="comments" id="comments-label">Please add additional comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50">
+            </textarea><br>
+        <input type="submit" id="submit" name="submit"></input>
+    </form>
